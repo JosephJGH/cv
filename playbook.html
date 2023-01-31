@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!--declaration that tells the browser what version of html the webpage was written in -->
+<html lang="en"> <!--root element of the webpage.  "lang" attribute is used for assistive technology
+   such as screen readers.  The technology will interpret/read the contents in the specified language-->
+ <head> <!--important information about webpage that will help render it in browser.  
+  The content is not displayed. -->
+   <meta charset="UTF-8"><!--placed in head element.  Used to ensure that certain characters 
+    are rendered in browser such as emojis & symbols -->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--used to keep doc compatible with edge browser -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--defines how the webpage should 
+    be displayed relative to the device it's being rendered on -->
+   <title>My Website</title><!--Text that is displayed on the tab of the website -->
+ </head>
+<body> <!--This is where majority of the content of the webpage resides -->
+<h1><em>This is a level 1 heading created using an h1 tag</em> <!--em italicizes enclosed text while
+conveying importance --></h1>
+  <p></p> <!--formats text into a paragragh. -->
+<h1><strong>Heading level 1</strong> <!--strong bolds enclosed text while conveying importance--></h1>
+<h2>Heading level 2</h2>
+<!--2 types of lists below-->
+    <ul><!--un-ordered list, bullet points -->
+        <li>first bullet point</li> <!--li stands for list item.  used for both ul & ol-->
+    </ul>
+<h3>Heading level 3</h3>
+    <ol type="i"><!--ordered list, list in ascending order starting from 1)
+    "type='i'" attribute/value pair specifies roman numeral form. if no type is defined, numbers is default.-->
+        <li>first bullet point</li> <!-- will start as "i." instead of "1)"-->
+    </ol>
+    <ol start="7"><!--self explanatory.  "start" attribute tells list where to begin; the "7" value defines
+    actual starting point-->
+        <li>first entry</li>
+    </ol>
+<h4>Heading level 4</h4>
+<h5>Heading level 5</h5>
+<h6>Heading level 6</h6>
+<img src="test_image.jpg" alt="a test image"><!--self closing tag.  used to insert image. src attribute tells the browser where
+to find the image; the src value is the actual location. location can be local on the server or a URL.
+The "alt" attribute is used to show text in case the browser is unable to render the image.  The alt value is
+the text that will be displayed/read.-->
+<a href="">Some Text</a><!--anchor tag creates hyperlink to other webpages, files, etc specified in the "href"
+attribute.  Text within the tag will be underlined & will navigate to link when clicked.-->
+<table> <!--html element used to create/display table-->
+  <thead> <!--table head.  this is the space that will be used to contain the table headers-->
+    <tr>
+      <th>Some Data</th><!--table header.  this is the actual table header data. nested inside of a <tr> element.  
+      formatted in bold by default-->
+      <th>More Data</th><!--2nd table header, placed on same table row.-->
+      <!--the <tr> that houses <th> data can be placed outside of <thead> element.  however, it's best practice
+        to use format above for CSS/Javascript purposes-->
+    </tr>
+    
+  </thead>
+  <tr><!--"Table Row" used to create a row in an html table-->
+    <td></td><!--"Table Data" used to place the data of the row-->
+  </tr>
+  <tfoot><!--table footer-->
+
+  </tfoot>
+</table>
+<form><!--represents a section containing interactive controls for submitting information (user input)-->
+  <label for="name">Enter your name: </label><!--text that serves as label for the corresponding input element-->
+  <input type="text" name="name" id="name" required><!--textbox titled "name".  "name" attribute
+    is used to identify the input data; "id" attribute is used to identify the specific input element on the page.
+    Input element is self closing-->
+  <textarea name="message" rows="10" cols="30"></textarea><!--used to create a text field, typically for a message. "rows" & "cols" attributes
+  are used to define how wide & tall the textarea is, respectively.-->
+
+
+</form>
+
+  </body>
+
+
+<br> <!-- code for line break -->
+  
+</html>
